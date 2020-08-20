@@ -550,6 +550,7 @@ class KGDatasetUDD(KGDataset):
             if skip_first_line:
                 _ = f.readline()
             for line in f:
+                print(f"harsha testing {line}")
                 triple = line.strip().split(self.delimiter)
                 h, r, t = triple[format[0]], triple[format[1]], triple[format[2]]
                 try:
